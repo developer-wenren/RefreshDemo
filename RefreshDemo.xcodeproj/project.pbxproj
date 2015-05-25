@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2C8040B6F6B7F3C4D53432 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39460F4F0272D0E98BB0C9 /* libPods.a */; };
 		51C52E221B1319B500DB0E07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C52E211B1319B500DB0E07 /* main.m */; };
 		51C52E251B1319B500DB0E07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C52E241B1319B500DB0E07 /* AppDelegate.m */; };
 		51C52E281B1319B500DB0E07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C52E271B1319B500DB0E07 /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		51C52E2D1B1319B500DB0E07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C52E2C1B1319B500DB0E07 /* Images.xcassets */; };
 		51C52E301B1319B500DB0E07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51C52E2E1B1319B500DB0E07 /* LaunchScreen.xib */; };
 		51C52E3C1B1319B600DB0E07 /* RefreshDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C52E3B1B1319B600DB0E07 /* RefreshDemoTests.m */; };
+		51C52E471B1325A100DB0E07 /* RFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C52E461B1325A100DB0E07 /* RFTableViewController.m */; };
+		51C52E4A1B13493800DB0E07 /* EGORefreshTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C52E491B13493800DB0E07 /* EGORefreshTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A39460F4F0272D0E98BB0C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C52E1C1B1319B400DB0E07 /* RefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C52E201B1319B500DB0E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51C52E211B1319B500DB0E07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,12 @@
 		51C52E351B1319B600DB0E07 /* RefreshDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefreshDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C52E3A1B1319B600DB0E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51C52E3B1B1319B600DB0E07 /* RefreshDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshDemoTests.m; sourceTree = "<group>"; };
+		51C52E451B1325A100DB0E07 /* RFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewController.h; sourceTree = "<group>"; };
+		51C52E461B1325A100DB0E07 /* RFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewController.m; sourceTree = "<group>"; };
+		51C52E481B13493800DB0E07 /* EGORefreshTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTest.h; sourceTree = "<group>"; };
+		51C52E491B13493800DB0E07 /* EGORefreshTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTest.m; sourceTree = "<group>"; };
+		6657BB3256E1EA1537C3C3CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8176C8DCDCCB1B93749A1DA4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2C8040B6F6B7F3C4D53432 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F6427E7874FF325F7F547BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8176C8DCDCCB1B93749A1DA4 /* Pods.debug.xcconfig */,
+				6657BB3256E1EA1537C3C3CC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		51C52E131B1319B300DB0E07 = {
 			isa = PBXGroup;
 			children = (
 				51C52E1E1B1319B400DB0E07 /* RefreshDemo */,
 				51C52E381B1319B600DB0E07 /* RefreshDemoTests */,
 				51C52E1D1B1319B400DB0E07 /* Products */,
+				4F6427E7874FF325F7F547BD /* Pods */,
+				D8C745A5F943849E7C677B9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +108,10 @@
 				51C52E261B1319B500DB0E07 /* ViewController.h */,
 				51C52E271B1319B500DB0E07 /* ViewController.m */,
 				51C52E291B1319B500DB0E07 /* Main.storyboard */,
+				51C52E451B1325A100DB0E07 /* RFTableViewController.h */,
+				51C52E461B1325A100DB0E07 /* RFTableViewController.m */,
+				51C52E481B13493800DB0E07 /* EGORefreshTest.h */,
+				51C52E491B13493800DB0E07 /* EGORefreshTest.m */,
 				51C52E2C1B1319B500DB0E07 /* Images.xcassets */,
 				51C52E2E1B1319B500DB0E07 /* LaunchScreen.xib */,
 				51C52E1F1B1319B500DB0E07 /* Supporting Files */,
@@ -119,6 +145,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D8C745A5F943849E7C677B9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A39460F4F0272D0E98BB0C9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51C52E3F1B1319B600DB0E07 /* Build configuration list for PBXNativeTarget "RefreshDemo" */;
 			buildPhases = (
+				DC135BBF3CE519C25BE66453 /* Check Pods Manifest.lock */,
 				51C52E181B1319B400DB0E07 /* Sources */,
 				51C52E191B1319B400DB0E07 /* Frameworks */,
 				51C52E1A1B1319B400DB0E07 /* Resources */,
+				123D6A389920DD04AC4CA26D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,12 +250,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		123D6A389920DD04AC4CA26D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC135BBF3CE519C25BE66453 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51C52E181B1319B400DB0E07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				51C52E281B1319B500DB0E07 /* ViewController.m in Sources */,
+				51C52E4A1B13493800DB0E07 /* EGORefreshTest.m in Sources */,
+				51C52E471B1325A100DB0E07 /* RFTableViewController.m in Sources */,
 				51C52E251B1319B500DB0E07 /* AppDelegate.m in Sources */,
 				51C52E221B1319B500DB0E07 /* main.m in Sources */,
 			);
@@ -347,6 +418,7 @@
 		};
 		51C52E401B1319B600DB0E07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8176C8DCDCCB1B93749A1DA4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RefreshDemo/Info.plist;
@@ -357,6 +429,7 @@
 		};
 		51C52E411B1319B600DB0E07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6657BB3256E1EA1537C3C3CC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RefreshDemo/Info.plist;
@@ -418,6 +491,7 @@
 				51C52E411B1319B600DB0E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51C52E421B1319B600DB0E07 /* Build configuration list for PBXNativeTarget "RefreshDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +500,7 @@
 				51C52E441B1319B600DB0E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
